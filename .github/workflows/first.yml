@@ -1,0 +1,19 @@
+name: My First GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print a message
+        run: echo "Hello Maryam! Your workflow is running successfully 🎉"
+
+Add first GitHub Actions YAML
